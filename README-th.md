@@ -2,32 +2,32 @@
 
 ## รายละเอียดเกี่ยวกับหนังสือ
 
-หนังสือเล่มนี้เป็นหนังสือเกี่ยวกับการเขียนโปรแกรมแบบ functional programming ในมุมมองทั่วไป โดยในหนังสือจะใช้ภาษา JavaScript เป็นหลักการดำเนินเรื่อง บางคนอาจจะเห็นว่าเป็นตัวเลือกที่ไม่ดีนัก แต่อย่างไรก็ตามเราเชื่อว่านี่เป็นหนึ่งในทางเลือกที่เหมาะสมในการเรียนรู้ functional programming (FP) ด้วยเหตุผลต่างๆดังนี้:
+หนังสือเล่มนี้เป็นหนังสือแนะนำการเขียนโปรแกรมแบบ functional programming โดยในหนังสือจะใช้ภาษา JavaScript เป็นหลักในการแนะนำ ซึ่งหลายคนอาจจะเห็นว่าเป็นตัวเลือกที่ไม่ดีนัก แต่อย่างไรก็ตามเราเชื่อว่า JavaScript เป็นหนึ่งในทางเลือกที่เหมาะสมในการเรียนรู้ functional programming (FP) ด้วยเหตุผลต่างๆดังนี้:
 
- * **สามารถใช้ FP ในงานที่ต้องทำอยู่เป็นประจำได้**
+ * **เราสามารถใช้ FP ในงานที่ทำอยู่เป็นประจำได้**
 
-    This makes it possible to practice and apply your acquired knowledge each day on real world programs rather than pet projects on nights and weekends in an esoteric FP language.
+    การที่เราสามารถนำเอาความรู้ที่ได้จากศึกษาไปใช้กับงานจริงๆนั้น ส่งผลดีมากกว่าการทำโครงการเล็กๆ
 
 
  * **ไม่จำเป็นต้องเริ่มต้นเรียนทุกสิ่งทุกอย่างใหม่หมด**
 
-    In a pure functional language, you cannot log a variable or read a DOM node without using monads. Here we can cheat a little as we learn to purify our codebase. It's also easier to get started in this language since it's mixed paradigm and you can fall back on your current practices while there are gaps in your knowledge.
+    ในภาษาแบบ pure functional นั้นเป็นการยากที่เราจะ log ค่าตัวแปร หรืออ่าน DOM โดยไม่ต้องใช้ monads แต่ด่วย JavaScript เราสามารถแอบโกงเล็กๆ ด้วยการผสม imperative method เข้าไปเมื่อเรายังมีความรู้ไม่พอในการทำบางอย่างด้วยแนวคิดแบบ functional
 
 
- * **JavaScript เป็นภาษาที่มีสนับสนุนในการเขียนโค้ดแบบ functional**
+ * **JavaScript เป็นภาษาที่เหมาะสมกับการเขียนโค้ดแบบ functional**
 
-    We have all the features we need to mimic a language like Scala or Haskell with the help of a tiny library or two. Object-oriented programming currently dominates the industry, but it's clearly awkward in JavaScript. It's akin to camping off of a highway or tap dancing in galoshes. We have to `bind` all over the place lest `this` change out from under us, we don't have classes (yet), we have various work arounds for the quirky behavior when the `new` keyword is forgotten, private members are only available via closures. To a lot of us, FP feels more natural anyways.
+    ในขณะที่การเขียนโปรแกรมเชิงวัตถุกำลังเป็นที่นิยมเป็นอย่างมาก เมื่อเรานำเอาเทคนิคเดียวกันมาใช้กับ JavaScript เรากลับพบว่ามันกลายเป็นเรื่องที่น่าประหลาดใจมากที่ มันทำให้เราต้องเขียน code ที่ดูแปลกประหลาด เช่น เราต้อง bind ทุกครั้งที่มีการใช้งาน this เพราะ scope ของ this ใน JavaScript นั้นไม่เหมือนกับภาษาอื่นๆ JavaScript (ยัง)ไม่มีคลาส ซึ่งเมื่อได้เปรียบเทียบกับการเขียนด้วย Functional Programming แล้วเรากลับพบว่าเราสามารถเขียนได้อย่างเป็นธรรมชาติกว่ามาก
 
-That said, typed functional languages will, without a doubt, be the best place to code in the style presented by this book. JavaScript will be our means of learning a paradigm, where you apply it is up to you. Luckily, the interfaces are mathematical and, as such, ubiquitous. You'll find yourself at home with Swiftz, Scalaz, Haskell, PureScript, and other mathematically inclined environments.
+ในหนังสือเล่มนี้จะใช้ JavaScript ในการอธิบายถึงแนวคิดในการเขียนโปรแกรมแบบ functional ซึ่งเมื่อผู้อ่านนำเอาแนวคิดที่ได้ไปใช้กับภาษาอื่นๆ เช่ร Swiftz, Scalaz, Haskell, Purescript และภาษาอื่นๆที่ใช้คณิตศาสตร์เป็นแนวคิดจะพบว่าสามารถเขียนโปรแกรมแบบ functional กับภาษาเหล่านั้นได้อย่างกลมกลืน
 
 
 ## อ่านแบบออนไลน์
 
-เพื่อให้ได้ความสะดวกในการอ่าน, [เราแนะนำให้อ่านจาก Gitbook](https://mostly-adequate.gitbooks.io/mostly-adequate-guide/).
+เพื่อให้ได้อรรถรสในการอ่าน, [เราแนะนำให้อ่านจาก Gitbook](https://mostly-adequate.gitbooks.io/mostly-adequate-guide/).
 
-- มี Sidebar ที่จะช่วยให้คุณสามารถเข้าถึงเนื้อหาได้สะดวก
-- มีแบบทดสอบให้ทดลองทำออนไลน์
-- มีตัวอย่างเชิงลึกให้ทำความเข้าใจ
+- Gitbook มี Sidebar ที่จะช่วยให้คุณสามารถเข้าถึงเนื้อหาได้สะดวก
+- เรามีแบบทดสอบให้ทดลองทำออนไลน์ได้ทันที
+- มีตัวอย่างเชิงลึกให้ทำความเข้าใจตามได้ทันที
 
 
 ## ดาวน์โหลดได้ที่นี่
@@ -37,7 +37,7 @@ That said, typed functional languages will, without a doubt, be the best place t
 * [ดาว์นโหลดไฟล์ Mobi (Kindle)](https://www.gitbook.com/download/mobi/book/mostly-adequate/mostly-adequate-guide)
 
 
-## Do it yourself
+## สร้างไฟล์หนังสือด้วยตัวเอง
 
 ```
 git clone https://github.com/MostlyAdequate/mostly-adequate-guide.git
@@ -48,29 +48,29 @@ gitbook pdf
 ```
 
 
-# Table of Contents
+# สารบัญ
 
-See [SUMMARY.md](SUMMARY.md)
+ดู [SUMMARY.md](SUMMARY.md)
 
 ### Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md)
+ดู [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ### Translations
 
-See [TRANSLATIONS.md](TRANSLATIONS.md)
+ดู [TRANSLATIONS.md](TRANSLATIONS.md)
 
 ### FAQ
 
-See [FAQ.md](FAQ.md)
+ดู [FAQ.md](FAQ.md)
 
 
 
-# Plans for the future
+# แผนงานในอนาคต
 
-* **Part 1** (chapters 1-7) is a guide to the basics. I'm updating as I find errors since this is the initial draft. Feel free to help!
-* **Part 2** (chapters 8-10) will address type classes like functors and monads all the way through to traversable. I hope to squeeze in transformers and a pure application.
-* **Part 3** (chapters 11+) will start to dance the fine line between practical programming and academic absurdity. We'll look at comonads, f-algebras, free monads, yoneda, and other categorical constructs.
+* **Part 1** (บทที่ 1-7) เป็นเนื้อหาขั้นต้นซึ่งทางผู้เขียนจะมีกรปรับปรุงเนื้อหาเมื่อพบข้อผิดพลาดเสมอ ถ้าพบข้อผิดพลาด โปรดแจ้งได้ทันที
+* **Part 2** (บทที่ 8-10) จะเป็นการลงรายละเอียดเกี่ยวกับ functor และ monad รวมไปถึง transformers และ pure application
+* **Part 3** (บทที่ 11+) จะเริ่มอธิบายถึงความแตกต่างระหว่างการเขียนโปรแกรมในมุมของการใช้งานทั่วไป และการใช้งานในเชิงวิชาการ ซึ่งจะมองไปจนถึง comonads, f-algebras, free monads, yoneda, และส่วนอื่นๆ
 
 
 ---
@@ -81,5 +81,5 @@ See [FAQ.md](FAQ.md)
     <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
   </a>
   <br />
-  This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+  งานเขียนชิ้นนี้ถูกคุ้มครองภายใต้ลิขสิทธิ์แบบ <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 </p>
